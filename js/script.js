@@ -1,8 +1,7 @@
 "use strict";
 
-function sean() {
-	console.log("Vasya");
-}
+const newText = document.querySelector(".new_element");
+const newElement = document.createElement("div");
+newElement.innerHTML = "I must, I gonna to work";
 
-setTimeout(sean, 0);
-console.log("kolya");
+newText.after(newElement);
